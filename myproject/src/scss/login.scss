@@ -1,0 +1,56 @@
+@import "options.scss";
+
+.Main-login-form {
+  @extend %MainForm;
+
+
+  .login-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    @extend %MainFormStyle;
+
+    span {
+      font-family: "Bradley Hand ITC";
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    #EmailConfirm {
+      display: none;
+    }
+
+    .login_inputs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: -80px;
+
+      button {
+        margin-left: 174px;
+        margin-top: 20px;
+      }
+    }
+
+    .LinkButtons {
+      @extend %Button
+    }
+
+    #Logout {
+      display: none;
+    }
+
+    button {
+      @extend %MainButtons
+    }
+
+    input {
+      @extend %MainInputStyle;
+
+    }
+  }
+}
+

@@ -1,0 +1,70 @@
+@import "options.scss";
+
+.Main-register-form {
+  @extend %MainForm;
+
+  .register_form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    @extend %MainFormStyle;
+
+    .no_activity {
+      display: none;
+    }
+
+    #rules {
+      width: 40px;
+      box-shadow: none;
+    }
+
+    #Step {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        width: 300px;
+        font-weight: bold;
+        font-family: 'roboto mono', monospace;
+      }
+    }
+
+    #Step1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: #dc0d0d;
+    }
+
+    #Step3 {
+      display: none;
+    }
+
+    #Step4 {
+      display: none;
+    }
+
+    span {
+      font-family: "Bradley Hand ITC";
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    .LinkButtons {
+      @extend %Button;
+    }
+
+    button {
+      @extend %MainButtons
+    }
+
+    input {
+      @extend %MainInputStyle;
+    }
+  }
+}
+

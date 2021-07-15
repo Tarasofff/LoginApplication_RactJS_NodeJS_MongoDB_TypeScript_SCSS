@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  text-align: center;
+  background-size: cover;
+}
+
+.MainBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .MainForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 300px;
+    position: relative;
+    width: 600px;
+    height: 300px;
+
+    .LINKTO {
+      list-style-type: none;
+      font-family: 'roboto mono', monospace;
+      font-size: 40px;
+      z-index: 2;
+      border: none;
+      color: rgb(213, 141, 19);
+      text-decoration: none;
+      transition: 1s;
+
+      &:hover{
+        color: #e7e7e4;
+        transition: 2s;
+        transform: scale3d(1.5, 1.2, 0.3);
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+%MainForm {
+  z-index: 2;
+  color: aliceblue;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 300px;
+  opacity: 0.9;
+}
+
+%MainFormStyle {
+  width: 600px;
+  height: 500px;
+  background-color: #097de8;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(16, 153, 134);
+}
+
+%MainInputStyle {
+  width: 450px;
+  height: 30px;
+  margin-top: 80px;
+  box-shadow: 0 0 10px rgb(10, 10, 10);
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Bradley Hand ITC";
+  transition: 1s;
+  border-radius: 10px;
+  display: flex;
+
+  &:hover {
+    width: 550px;
+    height: 40px;
+    transition: 1s;
+    color: #5dd506;
+  }
+
+}
+
+%MainButtons {
+  border: none;
+  background-color: #39d713;
+  width: 100px;
+  height: 50px;
+  opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(10, 10, 10);
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  font-size: 18px;
+
+  &:hover {
+    width: 120px;
+    height: 60px;
+    transition: 1s;
+    font-size: 21px;
+  }
+}
+
+%Button {
+  min-width: 100px;
+  min-height: 30px;
+  background-color: #44dc0d;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #0a0a0a;
+  transition: 1s;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgb(10, 10, 10);
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  margin-bottom: 15px;
+
+  &:hover {
+    color: #244be0;
+    font-size: 30px;
+    transition: 2s;
+  }
+}
